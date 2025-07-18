@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaribeShop", "CaribeShop\CaribeShop.csproj", "{447299C8-BECE-42B6-87DD-FEED5D96E3B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sources", "Sources", "{5D4F1595-B2D1-44FB-957B-13FE9D7E96C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{DE46E2C8-6BBD-4092-A677-E537F62BD651}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraestructure", "{BAA9B425-562E-44E5-9517-704F35838E74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{0D8BBB84-0A0D-4CAC-91E2-DA0F1C362858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaribeShop.Core.Domain", "CaribeShop.Core.Domain\CaribeShop.Core.Domain.csproj", "{42DC8079-08F4-45DF-9C41-BD25825EE361}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaribeShop.Core.Application", "CaribeShop.Core.Application\CaribeShop.Core.Application.csproj", "{342C21A9-DAAC-4A95-B03E-BFEC4CF2A63B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaribeShop.Infrastructure.Persistence", "CaribeShop.Infrastructure.Persistence\CaribeShop.Infrastructure.Persistence.csproj", "{B7CEF3DF-29E7-4BC6-BB85-DD0B478A5A8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{447299C8-BECE-42B6-87DD-FEED5D96E3B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447299C8-BECE-42B6-87DD-FEED5D96E3B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447299C8-BECE-42B6-87DD-FEED5D96E3B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447299C8-BECE-42B6-87DD-FEED5D96E3B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42DC8079-08F4-45DF-9C41-BD25825EE361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42DC8079-08F4-45DF-9C41-BD25825EE361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42DC8079-08F4-45DF-9C41-BD25825EE361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42DC8079-08F4-45DF-9C41-BD25825EE361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{342C21A9-DAAC-4A95-B03E-BFEC4CF2A63B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{342C21A9-DAAC-4A95-B03E-BFEC4CF2A63B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{342C21A9-DAAC-4A95-B03E-BFEC4CF2A63B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{342C21A9-DAAC-4A95-B03E-BFEC4CF2A63B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7CEF3DF-29E7-4BC6-BB85-DD0B478A5A8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7CEF3DF-29E7-4BC6-BB85-DD0B478A5A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7CEF3DF-29E7-4BC6-BB85-DD0B478A5A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7CEF3DF-29E7-4BC6-BB85-DD0B478A5A8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{447299C8-BECE-42B6-87DD-FEED5D96E3B6} = {0D8BBB84-0A0D-4CAC-91E2-DA0F1C362858}
+		{DE46E2C8-6BBD-4092-A677-E537F62BD651} = {5D4F1595-B2D1-44FB-957B-13FE9D7E96C8}
+		{BAA9B425-562E-44E5-9517-704F35838E74} = {5D4F1595-B2D1-44FB-957B-13FE9D7E96C8}
+		{0D8BBB84-0A0D-4CAC-91E2-DA0F1C362858} = {5D4F1595-B2D1-44FB-957B-13FE9D7E96C8}
+		{42DC8079-08F4-45DF-9C41-BD25825EE361} = {DE46E2C8-6BBD-4092-A677-E537F62BD651}
+		{342C21A9-DAAC-4A95-B03E-BFEC4CF2A63B} = {DE46E2C8-6BBD-4092-A677-E537F62BD651}
+		{B7CEF3DF-29E7-4BC6-BB85-DD0B478A5A8A} = {BAA9B425-562E-44E5-9517-704F35838E74}
+	EndGlobalSection
+EndGlobal

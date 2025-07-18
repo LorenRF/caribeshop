@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "R3/nwsv0EoHFoG9QEdfM+BrCLhNbKO+VWXwaQrI39go=",
+  "Source": "CaribeShop",
+  "BasePath": "_content/CaribeShop",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "CaribeShop\\wwwroot",
+      "Source": "CaribeShop",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\CaribeShop\\CaribeShop\\wwwroot\\",
+      "BasePath": "_content/CaribeShop",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\CaribeShop\\CaribeShop\\wwwroot\\images\\products\\default.jpg",
+      "SourceId": "CaribeShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\CaribeShop\\CaribeShop\\wwwroot\\",
+      "BasePath": "_content/CaribeShop",
+      "RelativePath": "images/products/default.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\default.jpg"
+    }
+  ]
+}

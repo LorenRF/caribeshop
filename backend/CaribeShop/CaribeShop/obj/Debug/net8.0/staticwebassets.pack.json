@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\CaribeShop\\CaribeShop\\wwwroot\\images\\products\\default.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\default.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CaribeShop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CaribeShop.props",
+      "PackagePath": "build\\CaribeShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CaribeShop.props",
+      "PackagePath": "buildMultiTargeting\\CaribeShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CaribeShop.props",
+      "PackagePath": "buildTransitive\\CaribeShop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
