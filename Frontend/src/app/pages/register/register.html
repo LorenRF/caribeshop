@@ -1,0 +1,134 @@
+<!-- Fondo azul institucional -->
+<div class="bg-bacc min-vh-100 d-flex justify-content-center align-items-center">
+  <div class="card shadow p-4 w-100" style="max-width: 500px;">
+    <h3 class="text-center mb-4 text-gray">Registro</h3>
+
+    <form (ngSubmit)="register()" #registerForm="ngForm" novalidate>
+      
+      <!-- Usuario -->
+      <div class="mb-3">
+        <label for="username" class="form-label text-gray">Usuario</label>
+        <input
+          type="text"
+          id="username"
+          name="userName"
+          [(ngModel)]="form.userName"
+          #userName="ngModel"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': userName.invalid && userName.touched }"
+          required
+        />
+        <div *ngIf="userName.invalid && userName.touched" class="invalid-feedback">
+          El usuario es obligatorio.
+        </div>
+      </div>
+
+      <!-- Nombre y Apellido -->
+      <div class="row mb-3">
+        <div class="col">
+          <label for="name" class="form-label text-gray">Nombre</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            [(ngModel)]="form.name"
+            #name="ngModel"
+            class="form-control"
+            [ngClass]="{ 'is-invalid': name.invalid && name.touched }"
+            required
+          />
+          <div *ngIf="name.invalid && name.touched" class="invalid-feedback">
+            El nombre es obligatorio.
+          </div>
+        </div>
+
+        <div class="col">
+          <label for="lastName" class="form-label text-gray">Apellido</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            [(ngModel)]="form.lastName"
+            #lastName="ngModel"
+            class="form-control"
+            [ngClass]="{ 'is-invalid': lastName.invalid && lastName.touched }"
+            required
+          />
+          <div *ngIf="lastName.invalid && lastName.touched" class="invalid-feedback">
+            El apellido es obligatorio.
+          </div>
+        </div>
+      </div>
+
+      <!-- Email y Contraseña -->
+      <div class="row mb-3">
+        <div class="col">
+          <label for="email" class="form-label text-gray">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            [(ngModel)]="form.email"
+            #email="ngModel"
+            class="form-control"
+            [ngClass]="{ 'is-invalid': email.invalid && email.touched }"
+            required
+          />
+          <div *ngIf="email.invalid && email.touched" class="invalid-feedback">
+            Ingresa un correo válido.
+          </div>
+        </div>
+
+        <div class="col">
+          <label for="password" class="form-label text-gray">Contraseña</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            [(ngModel)]="form.password"
+            #password="ngModel"
+            class="form-control"
+            [ngClass]="{ 'is-invalid': password.invalid && password.touched }"
+            required
+            minlength="4"
+          />
+          <div *ngIf="password.invalid && password.touched" class="invalid-feedback">
+            La contraseña debe tener al menos 4 caracteres.
+          </div>
+        </div>
+      </div>
+
+      <!-- Dirección -->
+      <div class="mb-4">
+        <label for="address" class="form-label text-gray">Dirección</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          [(ngModel)]="form.address"
+          #address="ngModel"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': address.invalid && address.touched }"
+          required
+        />
+        <div *ngIf="address.invalid && address.touched" class="invalid-feedback">
+          La dirección es obligatoria.
+        </div>
+      </div>
+
+      <!-- Botón de registro -->
+      <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary" [disabled]="registerForm.invalid">
+          Registrarse
+        </button>
+      </div>
+
+      <!-- Botón para ir a login -->
+      <div class="text-center mt-3">
+        <button type="button" class="btn btn-outline-secondary" [routerLink]="['/login']">
+          ¿Ya tienes cuenta? Inicia sesión
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

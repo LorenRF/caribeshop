@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+/* src/styles.css */
+
+.bg-bacc {
+  background-color: #003865 !important; /* Azul institucional */
+}
+
+.text-gray {
+  color: #6c757d !important; /* Gris para textos */
+}

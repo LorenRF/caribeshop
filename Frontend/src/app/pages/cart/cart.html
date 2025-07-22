@@ -1,0 +1,60 @@
+<!-- Fondo azul -->
+<div class="bg-bacc min-vh-100 py-5">
+  <div class="container bg-white rounded shadow p-4">
+
+    <!-- Título -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-gray">Tu Carrito</h2>
+      <p class="text-gray">Revisa los productos seleccionados</p>
+    </div>
+
+    <!-- Carrito vacío -->
+    <div *ngIf="cartItems.length === 0" class="alert alert-info text-center">
+      Tu carrito está vacío.
+    </div>
+
+    <!-- Carrito con productos -->
+    <div *ngIf="cartItems.length > 0">
+      <div class="table-responsive">
+        <table class="table align-middle">
+          <thead class="text-gray small">
+            <tr>
+              <th>Producto</th>
+              <th class="text-center">Cantidad</th>
+              <th>Precio</th>
+              <th>Subtotal</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of cartItems">
+              <td class="fw-semibold text-gray">{{ item.product.name }}</td>
+              <td class="text-center">
+                <div class="d-flex justify-content-center align-items-center">
+                  <button class="btn btn-sm btn-outline-secondary" (click)="decrease(item)">−</button>
+                  <span class="mx-3">{{ item.quantity }}</span>
+                  <button class="btn btn-sm btn-outline-secondary" (click)="increase(item)">+</button>
+                </div>
+              </td>
+              <td class="text-gray">${{ item.product.price }}</td>
+              <td class="fw-bold text-primary">${{ item.product.price * item.quantity }}</td>
+              <td>
+                <button class="btn btn-sm btn-outline-danger" (click)="remove(item)">Eliminar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Total y acciones -->
+      <div class="d-flex justify-content-between align-items-center mt-4 flex-wrap">
+        <h4 class="text-primary fw-bold mb-3 mb-md-0">Total: ${{ getTotal() }}</h4>
+        <div>
+          <button class="btn btn-outline-danger me-3" (click)="clearCart()">Vaciar carrito</button>
+          <a routerLink="/checkout" class="btn btn-primary">Proceder al pago</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

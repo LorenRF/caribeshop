@@ -1,0 +1,19 @@
+.text-gray {
+  color: #6c757d; 
+}
+
+.card {
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.bg-bacc {
+  background-color: #003865; 
+}
+
+.text-gray {
+  color: #6c757d; 
+}

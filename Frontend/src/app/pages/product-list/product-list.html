@@ -1,0 +1,50 @@
+<!-- 
+  Esta vista muestra la lista de productos disponibles en la tienda. 
+  Se encuentra contenida dentro de un fondo azul institucional (clase bg-bacc),
+  y el contenido principal se presenta en un contenedor blanco con bordes redondeados y sombra para resaltar sobre el fondo.
+-->
+<div class="bg-bacc min-vh-100 py-5">
+  <div class="container bg-white rounded shadow p-4">
+
+    <!-- Título de la sección centrado -->
+    <h2 class="mb-4 text-gray text-center">Nuestros Productos</h2>
+
+    <!-- Sección de productos organizada en una cuadrícula responsiva -->
+    <div class="row">
+      <!-- Se itera sobre el arreglo de productos y se muestra uno por cada columna -->
+      <div class="col-md-4 mb-4" *ngFor="let product of products">
+        <div class="card border-0 shadow-sm h-100">
+          
+          <!-- Imagen del producto, ajustada con altura fija y recorte para mantener proporción -->
+          <img 
+            [src]="'https://localhost:7185/' + product.imageUrl"
+            alt="{{ product.name }}"
+            class="card-img-top img-fluid rounded-top"
+            style="height: 220px; object-fit: cover;"
+          />
+
+          <!-- Cuerpo de la tarjeta con la información del producto -->
+          <div class="card-body d-flex flex-column">
+            <!-- Nombre del producto -->
+            <h5 class="card-title text-gray fw-semibold">{{ product.name }}</h5>
+            
+            <!-- Descripción breve -->
+            <p class="card-text text-gray small">{{ product.description }}</p>
+            
+            <!-- Precio resaltado -->
+            <p class="fw-bold text-primary">${{ product.price }}</p>
+
+            <!-- Botón que redirige al detalle del producto, ubicado al final con mt-auto -->
+            <a
+              [routerLink]="['/product', product.id]"
+              class="btn btn-outline-primary mt-auto"
+            >
+              Ver Detalles
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

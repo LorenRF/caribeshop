@@ -1,0 +1,19 @@
+.text-gray {
+  color: #6c757d;
+}
+
+.table thead {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+.bg-bacc {
+  background-color: #003865; /* Azul institucional BACC */
+}
+
+.text-gray {
+  color: #6c757d; /* Gris institucional */
+}

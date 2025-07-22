@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\CaribeShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{447299C8-BECE-42B6-87DD-FEED5D96E3B6}|CaribeShop\\CaribeShop.csproj|c:\\users\\user\\source\\repos\\caribeshop\\caribeshop\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{447299C8-BECE-42B6-87DD-FEED5D96E3B6}|CaribeShop\\CaribeShop.csproj|solutionrelative:caribeshop\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CaribeShop\\CaribeShop\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "CaribeShop\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CaribeShop\\CaribeShop\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "CaribeShop\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T20:24:11.656Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

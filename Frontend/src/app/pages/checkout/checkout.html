@@ -1,0 +1,51 @@
+<!-- Fondo azul que cubre toda la altura de la pantalla -->
+<div class="bg-bacc min-vh-100 py-5">
+
+  <!-- Contenedor blanco central con bordes redondeados y sombra -->
+  <div class="container bg-white rounded shadow p-4">
+
+    <!-- Encabezado principal -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-gray">Resumen de Compra</h2>
+      <p class="text-gray">Ingresa tu dirección antes de confirmar el pedido</p>
+    </div>
+
+    <!-- Centrado del formulario usando el sistema de columnas de Bootstrap -->
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+
+        <!-- Tarjeta contenedora del formulario -->
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+
+            <!-- Campo de entrada para la dirección -->
+            <div class="mb-4">
+              <label for="address" class="form-label text-gray">Dirección de envío</label>
+              <input
+                id="address"
+                type="text"
+                [(ngModel)]="manualAddress"
+                class="form-control"
+                placeholder="Ej. Av. Duarte 123, Santo Domingo"
+                required
+              />
+            </div>
+
+            <!-- Visualización del total calculado -->
+            <h5 class="text-primary fw-bold mt-4">Total a pagar: ${{ getTotal() }}</h5>
+
+            <!-- Botón para confirmar el pedido -->
+            <div class="d-grid gap-2 mt-4">
+              <button class="btn btn-primary btn-lg" (click)="confirmOrder()">
+                Confirmar Pedido
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

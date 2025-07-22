@@ -1,0 +1,67 @@
+<!-- Fondo azul (bg-bacc) que ocupa toda la altura de la pantalla -->
+<div class="bg-bacc min-vh-100 d-flex justify-content-center align-items-center">
+
+  <!-- Tarjeta centrada que contiene el formulario -->
+  <div class="card shadow p-4 w-100" style="max-width: 400px;">
+    
+    <!-- Título -->
+    <h3 class="text-center mb-4 text-gray">Iniciar Sesión</h3>
+
+    <!-- Formulario de inicio de sesión -->
+    <form (ngSubmit)="login()" #loginForm="ngForm" novalidate>
+
+      <!-- Campo de Usuario -->
+      <div class="mb-3">
+        <label for="username" class="form-label text-gray">Usuario</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          [(ngModel)]="username"
+          #usernameField="ngModel"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': usernameField.invalid && usernameField.touched }"
+          required
+        />
+        <!-- Mensaje de validación -->
+        <div *ngIf="usernameField.invalid && usernameField.touched" class="invalid-feedback">
+          El usuario es obligatorio.
+        </div>
+      </div>
+
+      <!-- Campo de Contraseña -->
+      <div class="mb-3">
+        <label for="password" class="form-label text-gray">Contraseña</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          [(ngModel)]="password"
+          #passwordField="ngModel"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': passwordField.invalid && passwordField.touched }"
+          required
+        />
+        <!-- Mensaje de validación -->
+        <div *ngIf="passwordField.invalid && passwordField.touched" class="invalid-feedback">
+          La contraseña es obligatoria.
+        </div>
+      </div>
+
+      <!-- Botón de envío (deshabilitado si el formulario no es válido) -->
+      <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">
+          Entrar
+        </button>
+      </div>
+
+      <!-- Botón para ir a la pantalla de registro -->
+      <div class="text-center mt-3">
+        <button type="button" (click)="goToRegister()" class="btn btn-outline-primary">
+          Crear una cuenta
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>

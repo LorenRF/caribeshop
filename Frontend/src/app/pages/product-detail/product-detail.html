@@ -1,0 +1,57 @@
+<!-- Fondo azul institucional que cubre toda la altura de la pantalla -->
+<div class="bg-bacc min-vh-100 py-5">
+
+  <!-- Se muestra solo si existe un producto cargado -->
+  <div class="container" *ngIf="product">
+
+    <!-- Botón para regresar a la lista de productos -->
+    <div class="mb-4">
+      <a routerLink="/products" class="btn btn-outline-light">
+        ← Volver a productos
+      </a>
+    </div>
+
+    <!-- Contenedor blanco con sombra para resaltar el contenido -->
+    <div class="bg-white rounded shadow p-4">
+
+      <!-- Encabezado del producto -->
+      <div class="text-center mb-4">
+        <h2 class="fw-bold text-gray">{{ product.name }}</h2>
+        <p class="text-gray small">Detalles del producto</p>
+      </div>
+
+      <!-- Distribución en dos columnas: imagen + información -->
+      <div class="row align-items-start g-5">
+
+        <!-- Columna izquierda: imagen del producto -->
+        <div class="col-md-6">
+          <img 
+            [src]="'https://localhost:7185/' + product.imageUrl"
+            alt="{{ product.name }}"
+            class="img-fluid rounded shadow-sm"
+            style="max-height: 400px; object-fit: cover; width: 100%;"
+          />
+        </div>
+
+        <!-- Columna derecha: descripción, precio y botón -->
+        <div class="col-md-6">
+          <!-- Título de sección -->
+          <h4 class="text-gray fw-semibold">Descripción</h4>
+
+          <!-- Texto descriptivo -->
+          <p class="text-gray">{{ product.description }}</p>
+
+          <!-- Precio destacado -->
+          <h5 class="text-primary fw-bold mt-4 mb-3">${{ product.price }}</h5>
+
+          <!-- Botón para agregar el producto al carrito -->
+          <button class="btn btn-primary px-4 py-2" (click)="addToCart()">
+            Agregar al carrito
+          </button>
+        </div>
+
+      </div> <!-- /row -->
+
+    </div> <!-- /caja blanca -->
+  </div> <!-- /container -->
+</div> <!-- /fondo azul -->

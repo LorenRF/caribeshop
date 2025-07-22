@@ -1,0 +1,19 @@
+.nav-link {
+  color: #6c757d !important; /* gris */
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  color: #004f8b !important; /* azul oscuro */
+}
+
+.active-link {
+  color: #00AEEF !important; /* azul celeste */
+  border-bottom: 2px solid #00AEEF;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #004f8b !important;
+}
